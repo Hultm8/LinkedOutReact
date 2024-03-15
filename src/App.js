@@ -1,13 +1,24 @@
 import EmployeeComponent from "./Components/EmployeeComponent";
+import FooterComponent from "./Components/FooterComponent";
+import HeaderComponent from "./Components/HeaderComponent";
 import Sidebar from "./Components/Sidebar";
 
 
 function App() {
   return (
-    <div>
-      <EmployeeComponent/>
+    <>
+    <header>
+    <HeaderComponent/>
+  </header>
+  <div style={{ display: 'flex', flexDirection: 'row'}}>
       <Sidebar/>
-    </div>
+      <EmployeeComponent/>
+  </div>
+  <footer>
+    <FooterComponent/>
+  </footer>
+    </>
+  
   );
 }
 
